@@ -2,7 +2,7 @@ package edu.kis.vh.nursery;
 
 public class HanoiRhymer extends defaultCountingOutRhymer {
 
-    int totalRejected = 0;
+    private int totalRejected = 0;
 
     public int reportRejected() {
         return totalRejected;
@@ -14,5 +14,5 @@ public class HanoiRhymer extends defaultCountingOutRhymer {
         else
             super.countIn(in);
     }
-    //7 podpunkt
+
 }
