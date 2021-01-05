@@ -31,19 +31,4 @@ public class defaultCountingOutRhymer {
         return NUMBERS[total--];
     }
 
-    public int[] getNUMBERS() {
-        return NUMBERS;
-    }
-
-    public void setNUMBERS(int[] NUMBERS) {
-        this.NUMBERS = NUMBERS;
-    }
-
-    public int getTotal() {
-        return total;
-    }
-
-    public void setTotal(int total) {
-        this.total = total;
-    }
 }
