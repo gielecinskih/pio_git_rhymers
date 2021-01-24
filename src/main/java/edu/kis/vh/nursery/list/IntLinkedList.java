@@ -3,6 +3,7 @@ package edu.kis.vh.nursery.list;
 /**
  * List of numers
  */
+//TODO need a little of refactor
 public class IntLinkedList {
 
 	public static class Node{
