@@ -1,5 +1,8 @@
 package edu.kis.vh.nursery.list;
 
+/**
+ * List of numers
+ */
 public class IntLinkedList {
 
 	public static class Node{
@@ -14,6 +17,9 @@ public class IntLinkedList {
 	private Node last;
 	private int i;
 
+	/** Pushing number into list
+	 * @param i number to pusth to list
+	 */
 	public void push(int i) {
 		if (getLast() == null)
 			setLast(new Node(i));
@@ -24,20 +30,32 @@ public class IntLinkedList {
 		}
 	}
 
+	/** Method checking if list is empty
+	 * @return true id list is null
+	 */
 	public boolean isEmpty() {
 		return getLast() == null;
 	}
 
+	/**
+	 * @return false always :/
+	 */
 	public boolean isFull() {
 		return false;
 	}
 
+	/**
+	 * @return value on top of the list
+	 */
 	public int top() {
 		if (isEmpty())
 			return -1;
 		return getLast().value;
 	}
 
+	/**
+	 * @return popped value
+	 */
 	public int pop() {
 		if (isEmpty())
 			return -1;
@@ -46,10 +64,16 @@ public class IntLinkedList {
 		return ret;
 	}
 
+	/**
+	 * @return value of last Node in List
+	 */
 	public Node getLast() {
 		return last;
 	}
 
+	/**
+	 * @param last setting node as last
+	 */
 	public void setLast(Node last) {
 		this.last = last;
 	}
